@@ -1,0 +1,79 @@
+{
+  "menu": [
+    {
+      "name": "Open project",
+      "translation": {
+        "de": "Project öffnen"
+      },
+      "icon": "folder_open",
+      "active": true,
+      "src": "https://openenergytools.github.io/scl-editor/plugins/oscd-open/oscd-open.js"
+    },
+    {
+      "name": "Save project",
+      "translation": {
+        "de": "Projekt speichern"
+      },
+      "icon": "save",
+      "active": true,
+      "requireDoc": true,
+      "src": "https://openenergytools.github.io/scl-editor/plugins/oscd-save/oscd-save.js"
+    },
+    {
+      "name": "Validating",
+      "translation": {
+        "de": "Validieren"
+      },
+      "icon": "rule_folder",
+      "active": true,
+      "requireDoc": true,
+      "src": "https://openenergytools.github.io/scl-editor/plugins/scl-validating/scl-validating.js",
+      "TODO": "Implement as feature with better quality assurance; current version is in experimental phase"
+    },
+    {
+      "name": "Wizarding",
+      "translation": {
+        "de": "Wizarding"
+      },
+      "icon": "edit",
+      "active": true,
+      "requireDoc": true,
+      "src": "https://openenergytools.github.io/scl-editor/plugins/scl-wizarding/scl-wizarding.js"
+    }
+  ],
+  "editor": [
+    {
+      "name": "Test Editor Plugin 4",
+      "translations": { "de": "Test Editor Erweiterung 4" },
+      "src": "data:text/javascript;charset=utf-8,export%20default%20class%20TestEditorPlugin4%20extends%20HTMLElement%20%7B%0D%0A%20%20constructor%20%28%29%20%7B%20super%28%29%3B%20this.innerHTML%20%3D%20%60%3Cp%3ETest%20Editor%20Plugin%204%3C%2Fp%3E%60%3B%20%7D%0D%0A%7D",
+      "icon": "edit",
+      "active": true,
+      "requireDoc": true
+    },
+    {
+      "name": "Communication",
+      "icon": "settings_ethernet",
+      "active": true,
+      "requireDoc": true,
+      "src": "https://openenergytools.github.io/scl-editor/plugins/oscd-communication/scl-communication.js"
+    },
+    {
+      "name": "IED",
+      "icon": "edit",
+      "active": true,
+      "requireDoc": true,
+      "src": "https://openenergytools.github.io/scl-editor/plugins/scl-ied-editor/scl-ied-editor.js",
+      "TODO": "Needs to be reimplemented from legacy OpenSCD to allow editing; current version is display only"
+    },
+    {
+      "name": "Start",
+      "translations": {
+        "de": "Start"
+      },
+      "icon": "start",
+      "active": true,
+      "requireDoc": false,
+      "src": "https://openenergytools.github.io/scl-editor/plugins/scl-editor-landing/scl-editor-landing.js"
+    }
+  ]
+}
