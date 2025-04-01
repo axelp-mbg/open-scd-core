@@ -318,7 +318,11 @@ export class OpenSCD extends LitElement {
 
   @state()
   get editor() {
-    return this.editors[this.editorIndex]?.tagName ?? '';
+    const enabledEditors = this.editors?.filter(
+      enabledEditor => !enabledEditor.isDisabled()
+    );
+    if (enabledEditors.length === 0) return '';
+    return enabledEditors[this.editorIndex]?.tagName ?? '';
   }
 
   private controls: Record<
